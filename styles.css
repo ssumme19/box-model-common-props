@@ -1,7 +1,7 @@
 /* 
     This is a CSS comment. Please add your name to this file below:
     
-    NAME: 
+    NAME: Shayla Summers
 */
 /* -------------------------------------------------- */
 /* 
@@ -337,6 +337,13 @@ footer{
 
 /* For the first link in this section: */
 #section2 a:first-of-type{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 50%;
+    box-shadow: large;
     background-color: var(--lt-blue);
     color: var(--dk-gray);
     padding: 16px;
@@ -352,6 +359,13 @@ footer{
 
 /* For the last link in this section */
 #section2 a:last-of-type{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 50%;
+    box-shadow: large;
     background-color: var(--dk-blue);
     color: var(--white);
     padding: 8px;
@@ -377,6 +391,16 @@ footer{
             - left: 60px
 */
 #section2 div > p:last-of-type{
+    background-color: var(--teal-rgba);
+    border: 4px dashed darkgray;
+    margin-top: 16px;
+    margin-right: 60px;
+    margin-bottom: 32px;
+    margin-left: 8px;
+    padding-top: 32px;
+    padding-right: 8px;
+    padding-bottom: 16px;
+    padding-left: 60px;
     
 }
 
@@ -394,6 +418,11 @@ footer{
         - add the small box shadow, using the variable in the root
 */
 #section2 a:first-of-type:hover{
+    background-color: var(--dk-blue);
+    color: white;
+    border: var(--lt-blue);
+    box-shadow: var(--box-shadow-lg);
+
 
 }
 
@@ -418,6 +447,12 @@ footer{
         - add the small filter drop shadow from the CSS variables in the root
 */
 #section3 img{
+    display: block;
+    width: 200px;
+    height: auto;
+    margin: auto;
+    filter:drop-shadow(--filter-shadow-sm);
+
     
 }
 
@@ -460,6 +495,19 @@ footer{
         - move this to the right from its original location by 25px
 */
 #section3 div::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: var(--lt-blue);
+    border-radius: 50%;
+    position:relative;
+    top: -50px;
+    right: -25px;
+    z-index: 2;
+
+
+
 }
 
 
@@ -481,6 +529,10 @@ footer{
             - left: 0
 */
 #section4 p:last-of-type{
+    margin-top: 1rem;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    margin-left: 0;
 
 }
 
@@ -518,6 +570,8 @@ footer{
         - add the puppy-photo as a repeating background to the container
 */
 #bg-img-3{
+    background-color: var(--lt-blue-rgba);
+    background: center repeat url("images/puppy-photo.jpg");
     
 }
 
@@ -545,7 +599,9 @@ footer{
         - add the wood background texture from the images folder
 */
 #pattern1{
-    
+  background-color: lightgray;
+  background-size: 110%;
+  background-image: url(images/wood.png);  
 }
 
 /* For the second div, the pattern is from from Hero Pattern. These actually give you SVG code to paste into your CSS */
@@ -602,6 +658,7 @@ footer{
         - float the image to the right
 */
 #dog-house{
+    float: right;
     
 }
 
@@ -611,6 +668,7 @@ footer{
         - clear any floats
 */
 #section9{
+    clear: both;
     
 }
 
